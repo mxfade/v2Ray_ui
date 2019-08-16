@@ -92,7 +92,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/nbwxbo/v2-ui/master/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -111,7 +111,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/nbwxbo/v2-ui/master/install.sh)
     if [[ $? == 0 ]]; then
         echo -e "${green}更新完成，已自动重启面板${plain}"
         exit
@@ -275,7 +275,7 @@ show_log() {
 }
 
 install_bbr() {
-    bash <(curl -L -s https://raw.githubusercontent.com/mikewubox/v2-ui/master/bbr.sh)
+    bash <(curl -L -s https://raw.githubusercontent.com/nbwxbo/v2-ui/master/bbr.sh)
     if [[ $? == 0 ]]; then
         echo ""
         echo -e "${green}安装 bbr 成功${plain}"
@@ -288,7 +288,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/v2-ui -N --no-check-certificate https://github.com/mikewubox/v2-ui/raw/master/v2-ui.sh
+    wget -O /usr/bin/v2-ui -N --no-check-certificate https://github.com/nbwxbo/v2-ui/raw/master/v2-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         echo -e "${red}下载脚本失败，请检查本机能否连接 Github${plain}"
