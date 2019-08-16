@@ -30,7 +30,7 @@ v2-ui 与其它所有关于修改 v2ray 配置文件的工具***完全不兼容*
 
 ## 一键安装&升级
 ```
-bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2-ui/master/install.sh)
 ```
 
 # 面板其它操作
