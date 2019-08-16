@@ -99,7 +99,7 @@ install_v2-ui() {
         echo -e "${red}下载v2-ui失败，请确保你的服务器能够下载Github的文件，如果多次安装失败，请参考手动安装教程${plain}"
         exit 1
     fi
-    tar zxvf v2-ui-linux.tar.gz
+    tar xvf v2-ui-linux.tar.gz
     rm v2-ui-linux.tar.gz -f
     cd v2-ui
     chmod +x v2-ui
