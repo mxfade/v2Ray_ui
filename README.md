@@ -1,8 +1,11 @@
 # v2-ui
 支持多协议多用户的 v2ray 面板，Support multi-protocol multi-user v2ray panel
 
-# 详细教程
-https://blog.sprov.xyz/v2-ui/
+## 一键安装&升级
+```
+
+bash <(curl -Ls https://raw.githubusercontent.com/mxfade/v2Ray_ui/master/install.sh)
+
 
 # 运行截图
 ![1.png](1.png)
@@ -27,11 +30,6 @@ v2-ui 与其它所有关于修改 v2ray 配置文件的工具***完全不兼容*
  - CentOS 7+
  - Ubuntu 16+
  - Debian 8+
-
-## 一键安装&升级
-```
-
-bash <(curl -Ls https://raw.githubusercontent.com/nbwxbo/v2-ui/master/install.sh)
 
 # 面板其它操作
 ```
