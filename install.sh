@@ -63,7 +63,7 @@ install_base() {
 
 install_v2ray() {
     echo -e "${green}开始安装or升级v2ray${plain}"
-    bash <(curl -L -s https://install.direct/go.sh)
+    bash <(curl -sL https://raw.githubusercontent.com/mxfade/v2Ray_ui/centos_install_v2ray.sh)
     if [[ $? -ne 0 ]]; then
         echo -e "${red}v2ray安装或升级失败，请检查错误信息${plain}"
         exit 1
@@ -94,7 +94,7 @@ install_v2-ui() {
     fi
     last_version=$(curl -Ls "https://api.github.com/repos/nbwxbo/v2-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     echo -e "检测到v2-ui最新版本：${last_version}，开始安装"
-    wget -N --no-check-certificate -O /usr/local/v2-ui-linux.tar.gz https://github.com/nbwxbo/v2-ui/raw/master/v2-ui-linux.tar.gz
+    wget -N --no-check-certificate -O /usr/local/v2-ui-linux.tar.gz https://github.com/mxfade/v2Ray_ui/raw/master/v2-ui-linux.tar.gz
     if [[ $? -ne 0 ]]; then
         echo -e "${red}下载v2-ui失败，请确保你的服务器能够下载Github的文件，如果多次安装失败，请参考手动安装教程${plain}"
         exit 1
@@ -114,7 +114,7 @@ install_v2-ui() {
     echo -e ""
     echo -e "如果是更新面板，则按你之前的方式访问面板"
     echo -e ""
-    curl -o /usr/bin/v2-ui -Ls https://raw.githubusercontent.com/nbwxbo/v2-ui/master/v2-ui.sh
+    curl -o /usr/bin/v2-ui -Ls https://raw.githubusercontent.com/mxfade/v2Ray_ui/master/v2-ui.sh
     chmod +x /usr/bin/v2-ui
     echo -e "v2-ui 管理脚本使用方法: "
     echo -e "----------------------------------------------"
