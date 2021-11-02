@@ -63,7 +63,7 @@ install_base() {
 
 install_v2ray() {
     echo -e "${green}开始安装or升级v2ray${plain}"
-    bash <(curl -sL https://raw.githubusercontent.com/mxfade/v2Ray_ui/centos_install_v2ray.sh)
+    bash <(curl -sL https://raw.githubusercontent.com/mxfade/v2Ray_ui/master/centos_install_v2ray.sh)
     if [[ $? -ne 0 ]]; then
         echo -e "${red}v2ray安装或升级失败，请检查错误信息${plain}"
         exit 1
