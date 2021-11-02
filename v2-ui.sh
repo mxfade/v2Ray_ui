@@ -272,7 +272,7 @@ show_log() {
 }
 
 install_bbr() {
-    bash <(curl -L -s https://raw.githubusercontent.com/nbwxbo/v2-ui/master/bbr.sh)
+    bash <(curl -L -s https://raw.githubusercontent.com/mxfade/v2Ray_ui/master/bbr.sh)
     if [[ $? == 0 ]]; then
         echo ""
         echo -e "${green}安装 bbr 成功${plain}"
