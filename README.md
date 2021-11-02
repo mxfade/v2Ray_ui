@@ -6,11 +6,7 @@
 
 bash <(curl -Ls https://raw.githubusercontent.com/mxfade/v2Ray_ui/master/install.sh)
 
-
-# 运行截图
-![1.png](1.png)
-![2.png](2.png)
-
+```
 # 功能介绍
  - 系统状态监控
  - 支持多用户多协议，浏览器可视化操作，无需敲命令
